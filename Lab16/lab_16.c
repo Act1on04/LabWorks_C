@@ -92,7 +92,7 @@ void InputMatrix(int mtrx[][n], int color)
   wattron(stdscr, COLOR_PAIR(2));
   mvwprintw(stdscr, winY-4, winX+7, "¬ведите значени€ матрицы");
   refresh();
-  for (j=0;i<n;i++)
+  for (i=0;i<n;i++)
     for (j=0;j<n;j++)
     {
       winMatrix[i][j] = newwin( winH, winW, winY+(winH+otstup)*i, winX+(winW+otstup)*j);
